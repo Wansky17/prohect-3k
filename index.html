@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3K - Kenali, Kelola, Kurangi Sampah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                ♻️ 3K
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#prinsip">Prinsip 3K</a></li>
+                <li><a href="#manfaat">Manfaat</a></li>
+                <li><a href="#aksi">Aksi Nyata</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <button class="cta-btn" onclick="scrollToSection('aksi')">Mulai Aksi</button>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Kenali, Kelola, Kurangi: Tiga Langkah Menuju Lingkungan Bersih</h1>
+            <p>Panduan praktis untuk memahami sampah, mengelolanya dengan bijak, dan mengurangi dampaknya demi masa depan bumi yang lebih baik.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('prinsip')">Mulai Belajar</button>
+                <button class="btn-secondary" onclick="scrollToSection('aksi')">Lihat Aksi Nyata</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="prinsip">
+        <div class="container">
+            <h2 class="section-title">Prinsip Utama 3K</h2>
+            <div class="services-grid">
+                <div class="service-card floating">
+                    <div class="service-icon">🔍</div>
+                    <h3>1. Kenali</h3>
+                    <p>Pahami jenis-jenis sampah di sekitar kita, mulai dari organik, anorganik, hingga limbah B3 (Bahan Berbahaya dan Beracun).</p>
+                </div>
+                <div class="service-card floating">
+                    <div class="service-icon">♻️</div>
+                    <h3>2. Kelola</h3>
+                    <p>Pilahlah sampah sesuai jenisnya. Ubah sampah organik menjadi kompos dan salurkan sampah anorganik ke bank sampah atau pendaur ulang.</p>
+                </div>
+                <div class="service-card floating">
+                    <div class="service-icon">🛍️</div>
+                    <h3>3. Kurangi</h3>
+                    <p>Cegah timbulan sampah dari sumbernya. Gunakan produk pakai ulang, hindari plastik sekali pakai, dan beli barang sesuai kebutuhan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="manfaat">
+        <div class="container">
+            <div class="features-container">
+                <div class="features-content">
+                    <h2>Mengapa Menerapkan Prinsip 3K?</h2>
+                    <ul class="feature-list">
+                        <li>Mengurangi pencemaran tanah, air, dan udara</li>
+                        <li>Menghemat sumber daya alam yang terbatas</li>
+                        <li>Mencegah penumpukan sampah di TPA</li>
+                        <li>Menciptakan lingkungan yang lebih sehat dan bersih</li>
+                        <li>Memiliki potensi nilai ekonomis melalui daur ulang</li>
+                        <li>Mendorong gaya hidup yang lebih sadar dan berkelanjutan</li>
+                    </ul>
+                </div>
+                <div class="features-visual">
+    <img src="images/manfaat-3k.jpg" alt="Ilustrasi lingkungan hijau dan bersih">
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section" id="aksi">
+        <div class="container">
+            <h2 class="section-title">Aksi Nyata Kita</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <h3> Galeri Aksi Komunitas</h3>
+                    <p>Lihat berbagai kegiatan dan workshop yang telah kami lakukan bersama masyarakat.</p>
+                    <button class="btn-primary" style="margin-top: 1rem;" onclick="showGallery()">Lihat Galeri</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="kontak">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Hubungi Kami</h2>
+                    <p>Punya pertanyaan atau ingin berkolaborasi? Kami siap membantu Anda.</p>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <span>info@proyek3k.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📷</span>
+                        <span>@proyek3k_id (Social Media)</span>
+                    </div>
+                     <div class="contact-item">
+                        <span>🕒</span>
+                        <span>Senin - Jumat, 09:00 - 17:00</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Kirim Pesan</h3>
+                    <form onsubmit="submitForm(event)">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Beranda</a>
+                <a href="#prinsip">Prinsip 3K</a>
+                <a href="#manfaat">Manfaat</a>
+                <a href="#aksi">Aksi Nyata</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <p>&copy; 2025 3K Project. Semua hak dilindungi. | Untuk lingkungan yang lebih bersih</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
